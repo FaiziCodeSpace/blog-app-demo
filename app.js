@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 // CONFIG 
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
     
 // CONFIGURE EJS
 app.set('view engine', 'ejs');
