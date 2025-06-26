@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW POST</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%-include('partials/navbar.ejs')%>
+    <form class="create-form" action="/blogs/create" method="POST" class="form">
+        <input type="text" placeholder="TOPIC" name="topic" required>
+        <textarea rows="3" name="description" placeholder="Description"></textarea>
+        <input type="date" name="date" required>
+        <button type="submit">ADD POST</button>
+    </form>
+
+   
+</body>
+</html>

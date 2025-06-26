@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOGS</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%-include('partials/navbar.ejs')%>
+    <ul class="posts-portion">
+        <% posts.forEach(e => { %>
+          <li class="post-block">
+            <a href="/blogs/<%= e.id %>">
+              <div class="post-card">
+                <h1><%= e.topic %></h1>
+                <p class="desc"><%= e.description %></p>
+                <p class="date"><%= e.date %></p>
+              </div>
+            </a>
+            <form class="delete-btn" action="/blogs/delete/<%= e.id %>" method="POST">
+              <button type="submit">❌</button>
+            </form>
+          </li>
+        <% }) %>
+      </ul>
+
+</body>
+</html>

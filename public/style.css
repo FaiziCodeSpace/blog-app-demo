@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Chango", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+
+/* NAVBAR  */
+.navbar{
+    margin: 0;
+    display: flex;
+    background-color: rgb(50, 50, 255);
+    justify-content: center;
+}
+.navbar a, .navbar li{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar li{
+    padding: 20px;
+}
+.navbar li:hover{
+    background-color: blue;
+}
+
+/* POST  */
+.posts-portion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin: 20px;
+    justify-content: center;
+  }
+  
+  .post-block {
+    width: 300px;
+    height: 250px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .post-block a {
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1;
+  }
+  
+  .post-card h1 {
+    font-size: 1.2rem;
+    margin: 0 0 8px;
+  }
+  
+  .post-card .desc {
+    font-size: 0.95rem;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  
+  .post-card .date {
+    position: absolute;
+    font-size: 0.75rem;
+    color: #777;
+    bottom: 10px;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  
+  .delete-btn button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+/* Create new Post  */
+.create-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    gap: 1rem;
+    width: 500px;
+    justify-self: center;
+}
+
+.create-form input, textarea{
+    padding: 10px;
+}
+.create-form button{
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+/* SINGLE POST  */
+.sig-post{
+    margin: 20px;
+}
+.sig-post .top{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.sig-post .top p{
+    font-size: 15px;
+    color: #777;
+}
+
+/* ERROR  */
+.error-box{
+    text-align:  center;
+    margin-top: 13rem;
+    border: 2px solid black;
+    padding: 15px;
+    background-color: red;
+    color: white;
+}
+.error-box a{
+    text-decoration: none;    
+}
+
