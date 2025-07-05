@@ -23,6 +23,7 @@
 ---
 
 ## 📁 Folder Structure
+```
 blog-app-demo/
 │
 ├── Data/ # JSON file storage
@@ -32,7 +33,7 @@ blog-app-demo/
 │
 ├── app.js # Main server file
 ├── package.json
-
+```
 ---
 
 ## 📦 Setup & Run Locally
